@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Dropdown = ({ options, selected, onSelectedChange }) => {
+const Dropdown = ({ label, options, selected, onSelectedChange }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef();
   console.log("I Run With Every Render");
@@ -43,7 +43,7 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
   return (
     <div ref={dropdownRef} className="ui form">
       <div className="field">
-        <label className="label">Select a Color</label>
+        <label className="label">{label}</label>
         {/* when we click on item event bubbling occured and rise up blubb event and
         triggered click event listeners (close dropdown) */}
         <div
