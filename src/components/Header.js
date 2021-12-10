@@ -16,6 +16,9 @@ const Header = () => {
       <Link href="/translate" className="item">
         Translate
       </Link>
+      <Link href="/create" className="item">
+        Create(context)
+      </Link>
     </div>
   );
 };

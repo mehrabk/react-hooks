@@ -5,6 +5,10 @@ import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
 import Header from "./components/Header";
+import Create from "./components/Create";
+import ColorContext from "./contexts/ColorContext";
+import LanguageContext from "./contexts/LanguageContext";
+import HookContext from "./components/HookContext";
 
 const items = [
   {
@@ -57,6 +61,14 @@ const App = () => {
       </Route>
       <Route path="/translate">
         <Translate />
+      </Route>
+      <Route path="/create">
+        <ColorContext.Provider value="green">
+          <LanguageContext.Provider value={{ lang: "persian" }}>
+            <Create />
+          </LanguageContext.Provider>
+        </ColorContext.Provider>
+        <HookContext />
       </Route>
     </>
   );
