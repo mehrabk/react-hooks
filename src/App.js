@@ -5,10 +5,11 @@ import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
 import Header from "./components/Header";
-import Create from "./components/Create";
+import Create from "./components/context/Create";
 import ColorContext from "./contexts/ColorContext";
 import LanguageContext from "./contexts/LanguageContext";
-import HookContext from "./components/HookContext";
+import HookContext from "./components/context/HookContext";
+import Callback from "./components/callback";
 
 const items = [
   {
@@ -69,6 +70,9 @@ const App = () => {
           </LanguageContext.Provider>
         </ColorContext.Provider>
         <HookContext />
+      </Route>
+      <Route path="/callback">
+        <Callback />
       </Route>
     </>
   );

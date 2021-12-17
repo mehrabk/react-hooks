@@ -1,7 +1,7 @@
 import React from "react";
 
-import ColorContext from "../contexts/ColorContext";
-import LanguageContext from "../contexts/LanguageContext";
+import ColorContext from "../../contexts/ColorContext";
+import LanguageContext from "../../contexts/LanguageContext";
 
 // practice React create context in functional component
 const Button = () => {

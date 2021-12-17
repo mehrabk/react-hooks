@@ -1,5 +1,5 @@
 import React from "react";
-import LanguageContext from "../contexts/LanguageContext";
+import LanguageContext from "../../contexts/LanguageContext";
 
 // practice React create context in class component
 class Field extends React.Component {

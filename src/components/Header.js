@@ -19,6 +19,9 @@ const Header = () => {
       <Link href="/create" className="item">
         Create(context)
       </Link>
+      <Link href="/callback" className="item">
+        useCallback
+      </Link>
     </div>
   );
 };
