@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import API from "./api";
 
-// when number change -> Callback component will render
+// when dark get change -> Callback component will render
 // and when Callback component render -> getItems function get new value (changed function refrence)
 // and when getItems changed -> api function render(is useEffect`s Dependency)
 // we dont need render api function => for that we use useCallback hook and dont changed the refrence
